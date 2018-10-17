@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">MouzoM_U2</string>
+
+    //tab1 asteroides
+    <string name="asteroides">Asteroids</string>
+    <string name="jugar">Play</string>
+    <string name="configurar">Settings</string>
+    <string name="acercaDe">About</string>
+    <string name="salir">Exit</string>
+
+    //tab2 constraint layout
+    <string name="hola">Hello</string>
+
+
+
+</resources>

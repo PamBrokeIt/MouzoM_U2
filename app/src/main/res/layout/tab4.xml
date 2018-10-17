@@ -1,0 +1,177 @@
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/opMostrada">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/numero1"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="1"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/numero2"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="2"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/numero3"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="3"
+                        android:text="3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/numero4"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="4"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/numero5"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="5"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/numero6"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="6"
+                        android:text="6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/numero7"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="7"
+                        android:text="7" />
+
+                    <Button
+                        android:id="@+id/numero8"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="8"
+                        android:text="8" />
+
+                    <Button
+                        android:id="@+id/numero9"
+                        style="@style/miBotonNum"
+                        android:onClick="sePulsaBtnCalculadora"
+                        android:tag="9"
+                        android:text="9" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/numero0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#123456"
+                    android:typeface="serif"
+                    android:textSize="10pt"
+                    android:onClick="sePulsaBtnCalculadora"
+                    android:tag="0"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/miBotonCalc"
+                    android:id="@+id/botonBorrar"
+                    android:onClick="sePulsaBorrar"
+                    android:tag="C"
+                    android:text="C" />
+
+                <Button
+                    android:id="@+id/botonSuma"
+                    style="@style/miBotonCalc"
+                    android:onClick="sePulsaSumar"
+                    android:tag="+"
+                    android:text="+" />
+
+                <Button
+                    style="@style/miBotonCalc"
+                    android:id="@+id/botonIgual"
+                    android:onClick="sePulsaIgual"
+                    android:tag="="
+                    android:text="=" />
+
+                <Button
+                    android:id="@+id/botonPesetas"
+                    style="@style/miBotonCalc"
+                    android:onClick="sePulsaPesetas"
+                    android:tag="Pts"
+                    android:text="Pts" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/opMostrada"
+            style="@style/miTextViewCalc"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="Teclee en el panel"
+            android:tag="opMostrada"
+            android:text=""
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        style="@style/miTextView"
+        android:text="@string/asteroides" />
+
+    <Button
+        style="@style/miBoton"
+        android:text="@string/configurar" />
+
+    <Button
+        style="@style/miBoton"
+        android:text="@string/acercaDe" />
+
+    <Button
+        style="@style/miBoton"
+        android:text="@string/acercaDe" />
+
+    <Button
+        style="@style/miBoton"
+        android:text="@string/salir" />
+</LinearLayout>
